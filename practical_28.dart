@@ -1,18 +1,31 @@
+/*
+Menu driven Dart program:
+to change single or multiple list item
+to insert items to a list in dart
+to remove items from a dart list
+*/
+
 import "dart:io";
 
 List buildList() {
+
   stdout.write("Enter size:- ");
   int? size = int.parse(stdin.readLineSync()!);
+
   List l = [];
+
   for (int i = 0; i < size; i++) {
     stdout.write("Element ${i + 1} - ");
     int? x = int.parse(stdin.readLineSync()!);
     l.add(x);
   }
+
   return l;
+
 }
 
 void main() {
+
   print("""
 Enter 1 for changing single item in list,
 Enter 2 for inserting single item in list,
@@ -28,6 +41,7 @@ Enter 4 for exiting the code
     int? x = int.parse(stdin.readLineSync()!);
 
     switch (x) {
+
       case 1:
         stdout.write("Enter Index no:- ");
         int? idx = int.parse(stdin.readLineSync()!);
@@ -64,6 +78,9 @@ Enter 4 for exiting the code
       default:
         print("Invalid Input");
         print("");
+
     }
+
   }
+
 }

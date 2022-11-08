@@ -1,6 +1,14 @@
+/*
+Menu driven program to
+1. convert a string to double
+2. find the length of a string in Dart
+3. convert hexadecimal to integer
+*/
+
 import "dart:io";
 
 void main() {
+
   print("""
 Enter 1 for converting string to decimal,
 Enter 2 for getting length of a string,
@@ -44,6 +52,9 @@ Enter 4 for exiting the code
       default:
         print("Invalid Input");
         print("");
+
     }
+
   }
+
 }

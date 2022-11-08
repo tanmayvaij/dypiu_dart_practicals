@@ -1,3 +1,5 @@
+// Swap two user given numbers
+
 import "dart:io";
 
 void main() {
@@ -10,6 +12,7 @@ void main() {
 
   print("Before:- a: ${a} b: ${b}");
 
+  // swapping
   int temp = a;
   a = b;
   b = temp;

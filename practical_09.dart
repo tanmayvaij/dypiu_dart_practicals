@@ -1,3 +1,5 @@
+// Demonstrate types of strings with examples
+
 void main() {
   String s1 = 'String within single quotes';
   String s2 = "String within double quotes";

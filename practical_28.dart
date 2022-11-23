@@ -26,6 +26,8 @@ List buildList() {
 
 void main() {
 
+  List l = buildList();
+
   print("""
 Enter 1 for changing single item in list,
 Enter 2 for inserting single item in list,
@@ -33,9 +35,7 @@ Enter 3 for removing single item from list,
 Enter 4 for exiting the code
 """);
 
-  while (true) {
-
-    List l = buildList();
+  while (true) {   
 
     stdout.write("Enter your choice:- ");
     int? x = int.parse(stdin.readLineSync()!);
